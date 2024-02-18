@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "marzbanbot"
+version = "0.1.0"
+description = "Marzban bot"
+authors = ["cofob <cofob@riseup.net>"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.scripts]
+marzbanbot = "marzbanbot.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.3.0"
+aiohttp = "^3.8.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

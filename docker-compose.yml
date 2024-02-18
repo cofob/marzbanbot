@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bot:
+    image: ghcr.io/cofob/marzbanbot:latest
+
+    restart: always
+
+    environment:
+      TOKEN: "1234567890:ABCDEF1234567890ABCDEF1234567890ABC"
+      MARZ_USERNAME: "admin"
+      MARZ_PASSWORD: "password"
+      MARZ_HOST: "http://localhost:8000"
+      # To enable `/start <secret>` command
+      # SECRET: "secret"
+
+    depends_on:
+      - db
