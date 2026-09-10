@@ -1,3 +1,5 @@
+> **Archival notice:** This repository is archived and no longer maintained.
+
 # MarzbanBot
 
 Marzbanbot is a Telegram bot that creates new configs in Marzban. The bot can be run using a Docker Compose file, which is located in the root folder of the repository.
